@@ -19,7 +19,9 @@ export default class Products1596165672866 implements MigrationInterface {
           },
           {
             name: 'price',
-            type: 'integer',
+            type: 'decimal',
+            scale: 2,
+            precision: 10,
           },
           {
             name: 'quantity',

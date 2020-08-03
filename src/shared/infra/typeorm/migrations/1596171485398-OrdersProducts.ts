@@ -30,7 +30,9 @@ export default class OrdersProducts1596171485398 implements MigrationInterface {
           },
           {
             name: 'price',
-            type: 'integer',
+            type: 'decimal',
+            scale: 2,
+            precision: 10,
           },
           {
             name: 'quantity',

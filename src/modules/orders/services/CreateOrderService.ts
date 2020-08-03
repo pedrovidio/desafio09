@@ -69,15 +69,6 @@ class CreateOrderService {
       };
     });
 
-    const newCostumer = {
-      customer: {
-        email: customer.email,
-        id: customer.id,
-        name: customer.name,
-      },
-      order_products: productsList,
-    };
-
     const order = await this.ordersRepository.create({
       customer,
       products: productsList,
